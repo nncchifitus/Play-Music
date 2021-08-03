@@ -13,6 +13,8 @@ const prevBtn = $('.btn-prev')
 const randomBtn = $('.btn-random')
 const repeatBtn = $('.btn-repeat')
 const playlist = $('.playlist')
+const undoBtn = $('.btn-undo')
+const redoBtn = $('.btn-redo')
 
 const app = {
     currentIndex: 0,
@@ -230,8 +232,6 @@ const app = {
             repeatBtn.classList.toggle('active', _this.isRepeat)
         }
 
-        console.log(songs)
-
         // Handle when click playlist
         playlist.onclick = function (e) {
 
@@ -241,11 +241,18 @@ const app = {
                 songs[_this.currentIndex].classList.remove('active')
                 _this.currentIndex = song.dataset.index;
                 songs[_this.currentIndex].classList.add('active')
-                console.log(typeof song.dataset.index)
                 _this.loadCurrentSong()
                 audio.play()
-
             }
+        }
+
+        // Handle seek 10 seconds
+        undoBtn.onclick = function(e) {
+            audio.currentTime -= 10
+        }
+
+        redoBtn.onclick = function(e) {
+            audio.currentTime += 10
         }
     },
 
