@@ -1,5 +1,5 @@
 # Web phát nhạc đơn giản
-#### https://nncchifitus.github.io/play-music/
+#### https://nncchifitus.github.io/Play-Music/
 Gồm 6 chức năng chính: 
 - Repeat: Phát lại bài đang phát
 - Prev: Phát bài trước
