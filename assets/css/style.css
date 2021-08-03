@@ -82,6 +82,14 @@ header h2 {
   color: var(--primary-color);
 }
 
+.control .btn:hover {
+  cursor: pointer;
+}
+
+.control .btn:active {
+  opacity: 0.8;
+}
+
 .control .btn-toggle-play {
   width: 55px;
   height: 55px;
@@ -138,6 +146,9 @@ header h2 {
 }
 .song:active {
   opacity: 0.8;
+}
+.song:hover {
+  cursor: pointer;
 }
 .song.active .title,
 .song.active .author,

@@ -47,8 +47,8 @@ const app = {
         {
             name: 'See You Again',
             singer: 'Charlie Puth ft Wiz Khalifa',
-            path: 'https://aredir.nixcdn.com/NhacCuaTui894/SeeYouAgain-KurtSchneiderEppicAlexGoot-3888930.mp3?st=1q73myBS8FKr8Rx0snpMJw&e=1623144094',
-            image: 'https://nghiennhac.com/wp-content/uploads/2020/09/see-you-again-0.jpg',
+            path: './assets/audio/song5.mp3',
+            image: './assets/img/song5.jpg',
         },
 
         {
@@ -86,6 +86,12 @@ const app = {
             singer: 'Phúc Du feat. Bích Phương',
             path: './assets/audio/song10.mp3',
             image: './assets/img/song10.jpg',
+        },
+        {
+            name: 'Sugar',
+            singer: 'Robin Schulz ft Francesco Yates',
+            path: './assets/audio/song11.mp3',
+            image: './assets/img/song11.jpg',
         },
     ],
 
